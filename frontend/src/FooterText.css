@@ -1,0 +1,10 @@
+/* FooterText.css */
+
+.footer-text {
+    position: fixed;
+    bottom: 10px; /* Adjust this value to change vertical position from bottom */
+    right: 10px; /* Adjust this value to change horizontal position from right */
+    font-size: 40px;
+    color: #333; /* Adjust color as needed */
+  }
+  

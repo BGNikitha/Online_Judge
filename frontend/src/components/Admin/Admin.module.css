@@ -1,0 +1,114 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    /*margin-left : 10vw ; 
+    margin-right : 10vw ;*/
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    /* Horizontally center the container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.createLinkContainer {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center */
+    margin: 20px;
+}
+
+.createLink {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    background-color: #054e09;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.createLink:hover {
+    background-color: #b4c156;
+}
+
+.problemList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.problemItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.problemItem:hover {
+    background-color: #f1f1f1;
+}
+
+.problemTitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.problemActions {
+    display: flex;
+    gap: 10px;
+}
+
+/* For Delete Button */
+.deleteButton {
+    background-color: rgb(246, 54, 54);
+}
+
+/* For Read Button */
+.readButton {
+    background-color: rgb(32, 174, 70);
+}
+
+/* For Edit Button */
+.editButton {
+    background-color: rgb(226, 78, 186);
+}
+
+/* Shared Styles for Action Buttons */
+.actionButton {
+    display: inline-block;
+    padding: 6px 12px;
+    /* Reduced padding */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 90px;
+    /* Reduced width */
+    text-align: center;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    /* Reduced font size */
+}
+
+/* Hover Effect */
+.actionButton:hover {
+    transform: scale(1.1);
+
+}
+
+/* Focus Effect */
+.actionButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px currentColor;
+}

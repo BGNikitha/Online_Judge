@@ -1,0 +1,68 @@
+.welcome-container {
+  height: 100vh; /* occupy full height of the screen */
+  width: 100vw; /* occupy full width of the screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* optional background color */
+  padding: 20px; /* add some padding to the container */
+  background-image: url('image1.jpg'); /* add your background image here */
+  background-size: cover; /* make the image cover the whole container */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* prevent the image from repeating */
+  position: relative; /* create a stacking context for the overlay */
+}
+
+.welcome-container::before {
+  content: ''; /* create an empty element */
+  position: absolute; /* position it absolutely within the container */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* black overlay with 50% opacity */
+  z-index: 1; /* place the overlay below the content */
+}
+
+.welcome-message {
+  text-align: center;
+  margin-bottom: 40px; /* add some space between the message and the buttons */
+  z-index: 2; /* ensure the message is above the overlay */
+  position: relative; /* create a stacking context for the message */
+}
+
+.welcome-message h2 {
+  font-size: 36px; /* increased font size */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fffbfb; /* change text color to white */
+}
+
+.welcome-message p {
+  font-size: 24px; /* increased font size */
+  color: #f2eded; /* change text color to white */
+}
+
+nav {
+  display: flex;
+  flex-direction: column; /* stack the buttons vertically */
+  align-items: center; /* center the buttons horizontally */
+  margin-top: 20px;
+  z-index: 2; /* ensure the nav is above the overlay */
+  position: relative; /* create a stacking context for the nav */
+}
+
+nav button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px; /* increased font size */
+  cursor: pointer;
+  margin-bottom: 20px; /* add some space between the buttons */
+}
+
+nav button:hover {
+  background-color: #3e8e41;
+}

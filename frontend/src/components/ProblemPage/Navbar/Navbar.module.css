@@ -1,0 +1,27 @@
+/* NavBar.module.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.navbar button {
+  background-color: transparent; /* Transparent background */
+  color: #000000;
+  border: none; /* Remove border */
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+  background-color: #921010;
+}
+
+.navbar button:focus {
+  outline: none;
+  background-color: #d0d0d0;
+}

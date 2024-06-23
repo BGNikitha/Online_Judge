@@ -1,0 +1,70 @@
+html, body {
+    height: 100%; /* Ensure HTML and body take full height of viewport */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent scrollbars from appearing on the entire page */
+    background-image: url('imageLogin.jpg'); /* Add your background image here */
+    background-size: cover; /* Make the image cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Ensure background image stays fixed in place */
+  }
+  
+  .container {
+    height: 100vh; /* occupy full height of the screen */
+    width: 100vw; /* occupy full width of the screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #9a3939; /* add a border */
+    border-radius: 5px;
+    border-color: #4CAF50; /* add color to the border */
+    overflow: auto; /* Allow content inside .container to scroll if needed */
+    background-color: transparent; /* Ensure container background is transparent */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8BC34A; /* default background color */
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #598e3e;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  

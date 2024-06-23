@@ -1,0 +1,46 @@
+/* ProblemPage.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw;  /* Full width of the viewport */
+  }
+  
+  .navbar {
+    flex: 0 0 auto; /* Navbar takes only the space it needs */
+    border-bottom: 3px solid rgb(20, 2, 2); /* Green separator line */
+    background-color: #060807; /* Background color for the navbar */
+    padding: 10px;
+    display: flex; /* Use flexbox to arrange items side by side */
+    justify-content: center; /* Center the buttons */
+  }
+  
+  .navbar button {
+    background-color: #729eaa; /* Button background color */
+    color: #000000; /* Button text color */
+    border: 1px solid #000000; /* Black border for the buttons */
+    padding: 10px 20px; /* Padding for the buttons */
+    margin: 0 10px; /* Margin between the buttons */
+    border-radius: 5px; /* Optional: rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar button:hover {
+    background-color: #a2b48f; /* Background color on hover */
+  }
+  
+  .navbar button:focus {
+    outline: none; /* Remove default focus outline */
+    background-color: #63a0a4; /* Background color on focus */
+  }
+  
+  .content {
+    flex: 1 1 auto; /* Content takes up the remaining space */
+    overflow-y: auto; /* Scrollable content */
+    padding: 20px; /* Optional padding */
+    background-color: #dedcdc; /* Background color for the content area */
+    
+  }
+  
